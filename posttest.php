@@ -36,7 +36,7 @@
 
         $sql = "CREATE DATABASE IF NOT EXISTS $dbname";
         if ($conn->query($sql) === TRUE) {
-            echo "Database berhasil dibuat atau sudah ada.<br>";
+            echo "Database berhasil dibuat.<br>";
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
         }
@@ -51,7 +51,7 @@
         )";
 
         if ($conn->query($sql) === TRUE) {
-            echo "Tabel mahasiswa berhasil dibuat atau sudah ada.<br>";
+            echo "Tabel mahasiswa berhasil dibuat.<br>";
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
         }
@@ -64,7 +64,7 @@
             ('Nurzilah Hidayati', '22090155')";
 
         if ($conn->query($sql) === TRUE) {
-            echo "Data berhasil ditambahkan ke tabel.<br>";
+            echo "Data berhasil ditambahkan.<br>";
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
         }
